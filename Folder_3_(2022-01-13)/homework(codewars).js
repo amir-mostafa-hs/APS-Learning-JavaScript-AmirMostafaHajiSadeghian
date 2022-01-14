@@ -45,3 +45,40 @@ console.log(getBestStudent({
   Mike: [87, 98, 64, 71],
   Jim: [90, 58, 73, 86],
 }));
+
+// !#2(countElement)
+/*
+Given an array, create a function that returns an object detailing how many 
+times each element was repeated. Sort the object by value in descending order.
+
+Examples
+countRepetitions(["cat", "dog", "cat", "cow", "cow", "cow"]) ➞ { cow: 3, cat: 2, dog: 1 }
+
+countRepetitions([1, 5, 5, 5, 12, 12, 0, 0, 0, 0, 0, 0]) ➞ { 0: 6, 5: 3, 12: 2, 1: 1 }
+
+countRepetitions(["Infinity", "null", "Infinity", "null", "null"]) ➞ { null: 3, Infinity: 2}
+Notes
+The array elements can be anything.
+*/
+
+// ? my code for question:
+
+function countRepetitions(arrOfName) {
+  const objOfCount = {};
+  arrOfName.map((item) => {
+    objOfCount[item] = arrOfName.filter((element) => element === item).length;
+  });
+  const arrForSort = Object.values(objOfCount);
+  arrForSort.sort((num1, num2) => num1 - num2);
+  const sortObjOfCount = {};
+  for (let step = arrForSort.length * 3; step >= 0; step--) {
+    for (const key in objOfCount) {
+      if (objOfCount[key] === arrForSort[step/3]) {
+        sortObjOfCount[key] = objOfCount[key];
+      }
+    }
+  }
+  return sortObjOfCount;
+}
+
+console.log(countRepetitions(["Infinity", "null", "Infinity", "null", "null"]));
