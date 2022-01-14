@@ -31,9 +31,24 @@
             ? 4-We can concatenate the strings by (+) or (.concat)
             ? 5-if we add numbers to strings, we will receive string finally
       !example:
-               1- let str = "strTest" => s t r T e s t
-                                         0 1 2 3 4 5 6
+            !   1- let str = "strTest" => s t r T e s t
+            !                             0 1 2 3 4 5 6
 
-               2- let str = "strTest" , str[3] => "T"
+            !   2- let str = "strTest" , str[3] => "T"
+
+            !   3- let str = "strTest" , str.length => 7 //? length is a counting operation, so it starts counting from 1, not 0
+
+            !   4- let str1 = "he" , let str2 = "llo" , log(str1+str2) => "hello"
+            !                                           log(str1.concat(str2)) => "hello" 
                
+            !   5- let str = "strTest " , let num = 12 , log(str + num) => "strTest 12"
+      *String Methods:
+               TODO: let str = "  strTEST  "
+               ? 1- toUpperCase => str.toUpperCase() => "  STRTEST  "
+               ? 2- toLowerCase => str.toLowerCase() => "  strtest  "
+               ? 3- trim => str.trim() => "strTest" //! JavaScript has (.trimStart()) and (.trimEnd())
+               ? 4- indexOf => str.indexOf(s) => 2  //! the result is the first "s" index . if str doesn't have "s", the result is -1
+                                    ! indexOf has a fromIndex parameter, this is to start the search from a specific index
+               ? 5- slice (begin parameter, end parameter) => 
+
  */
