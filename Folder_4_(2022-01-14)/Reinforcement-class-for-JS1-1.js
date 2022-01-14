@@ -49,6 +49,25 @@
                ? 3- trim => str.trim() => "strTest" //! JavaScript has (.trimStart()) and (.trimEnd())
                ? 4- indexOf => str.indexOf(s) => 2  //! the result is the first "s" index . if str doesn't have "s", the result is -1
                                     ! indexOf has a fromIndex parameter, this is to start the search from a specific index
-               ? 5- slice (begin parameter, end parameter) => 
+               ? 5- slice(begin parameter, end parameter) => str.slice(4) => "rTEST  "
+                                                            ? str.slice(5,9) => "TEST"
+                                                            ? str.slice(-5) => "EST  "
+               ? 6- replace(substr, newSubstr) => str.replace("s","*") => "  *trTEST  "
+               ? 7- replaceAll(substr, newSubstr) => str.replaceAll(" ","*") => "**strTEST**"
+               ? 8- repeat => str.repeat(2) => "  strTEST    strTEST  "
+ 
+ * What are expressions and statements?
+    “Wherever JavaScript expects a statement, you can also write an expression. 
+     Such a statement is called an expression statement. 
+     The reverse does not hold: you cannot write a statement where JavaScript expects an expression. 
+     For example,  declaring a variable cannot  assign to the new declaring a variable ”
+   
+      * Expressions :
+            ? 1-they can be assigned to variables
+            ? 2-returned from functions
+            ? 3-passed as arguments to functions
+            ? 4-combined with other expressions to form new expressions
 
+      * Statements : 
+            ? A statement is some code that typically carries out an instruction
  */
