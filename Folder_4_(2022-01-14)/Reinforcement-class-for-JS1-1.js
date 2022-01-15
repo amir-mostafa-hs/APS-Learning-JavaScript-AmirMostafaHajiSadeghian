@@ -62,7 +62,7 @@
      The reverse does not hold: you cannot write a statement where JavaScript expects an expression. 
      For example,  declaring a variable cannot  assign to the new declaring a variable ”
    
-      * Expressions :
+      * Expressions : 
             ? 1-they can be assigned to variables
             ? 2-returned from functions
             ? 3-passed as arguments to functions
@@ -70,4 +70,28 @@
 
       * Statements : 
             ? A statement is some code that typically carries out an instruction
+      
+ * NULL & UNDEFINED :
+      Primitive : In JavaScript, a primitive (primitive value, primitive data type) is data 
+      that is not an object and has no methods. There are 7 primitive data types: 
+      string, number, bigint, boolean, undefined, symbol, and null.
+
+      * Null :
+            The value null represents the intentional absence of any object value. 
+            It is one of JavaScript's primitive values and is treated as falsy for boolean operations.
+      * Undefined : 
+            The global undefined property represents the primitive value undefined. 
+            It is one of JavaScript's primitive types.
+
+      ! undefined is a type itself (undefined) while null is an object.
+
+ * Math : 
+      ? 1- Math.random() //! The Math.random() function returns a floating-point, pseudo-random number 
+                           ! in the range 0 to less than 1 (inclusive of 0, but not 1)
+      ? 2- Math.PI => 3.14159
+      ? 3- Math.round() => Math.round(1.5 to 1.9) => 2 , Math.round(1.1 to 1.4) => 1
+      ? 4- Math.abs() => Math.abs(-10) => 10 , Math.abs(10) => 10
+      ? 5- Math.pow(base, exponent) => Math.pow(2,3) => 8
+      ? 6- Math.floor() => Math.floor(3.99) => 3  //! returns the largest integer less than or equal to a given number.
+      ? 7- Math.ceil() => Math.ceil(3.1) => 4  //! rounds a number up to the next largest integer
  */
