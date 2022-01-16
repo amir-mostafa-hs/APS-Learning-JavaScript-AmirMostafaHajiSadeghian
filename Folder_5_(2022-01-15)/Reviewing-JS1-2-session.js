@@ -66,5 +66,25 @@
 
         * True values :  //? Any other value that does not include the above
 
+ * Logical Operators : 
+            ? 1- Logical AND (&&) : The logical AND (&&) operator (logical conjunction) for a set of Boolean operands will be trueif and only
+                                  ? if all the operands are true. Otherwise it will be false.More generally, the operator returns the value of 
+                                  ? the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.
+
+            ? 2- Logical OR (||) : The logical OR (||) operator (logical disjunction) for a set of operands is true if and only 
+                                 ? if one or more of its operands is true. It is typically used with Boolean (logical) values. 
+                                 ? When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, 
+                                 ? so if this operator is used with non-Boolean values, it will return a non-Boolean value.
+                                 ! true || false && false   // returns true, because && is executed first
+                                 ! (true || false) && false  // returns false, because operator precedence cannot apply
             
+            ? 3- Logical NOT (!) : The logical NOT (!) operator (logical complement, negation) takes truth to falsity and vice versa. 
+                                 ? It is typically used with Boolean (logical) values. When used with non-Boolean values, 
+                                 ? it returns false if its single operand can be converted to true; otherwise, returns true.
+
+            ? 4- Logical nullish assignment (??=) : The logical nullish assignment (x ??= y) operator only assigns if x is nullish (null or undefined).
+
+            ? 5- Logical OR assignment (||=) : The logical OR assignment (x ||= y) operator only assigns if x is falsy.
+
+
  */
