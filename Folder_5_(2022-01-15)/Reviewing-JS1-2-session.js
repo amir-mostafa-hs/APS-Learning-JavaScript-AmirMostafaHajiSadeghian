@@ -33,5 +33,29 @@
 
  * parseInt(): => //? The parseInt() function parses a string argument and returns an integer of the specified radix
 
-                  
+ * Conditionals : 
+            ? if(conditions){               The if statement executes a statement if a specified condition is truthy. 
+            ?    codes                      If the condition is falsy, another statement can be executed.
+            ? } else if (conditions) {
+            ?    codes
+            ? }else{
+            ?    codes
+            ? }
+
+            ? switch (expression) {         The switch statement evaluates an expression, matching the expression's value to a case clause,
+            ? case value1:                  and executes statements associated with that case, as well as statements in cases that follow the matching case.
+            ?   codes
+            ? break;
+            ? case value2:
+            ?   codes
+            ? break;                        The optional break statement associated with each case label ensures that the program breaks 
+                                          ? out of switch once the matched statement is executed and continues execution at the statement 
+                                          ? following switch. If break is omitted, the program continues execution at the next statement in the switch statement.
+
+            ? default:           (Optional) A default clause; if provided, this clause is executed
+            ?   codes                       if the value of expression doesn't match any of the case clauses.
+            ? break;
+            ? }
+
+
  */
