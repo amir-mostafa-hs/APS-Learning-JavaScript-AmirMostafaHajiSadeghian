@@ -57,5 +57,14 @@
             ? break;
             ? }
 
+ * Truthiness and Falseness : 
+            ? In JavaScript, a truthy value is a value that is considered true when 
+            ? encountered in a Boolean context. All values are truthy unless they are defined as falsy 
+            ? (i.e., except for false, 0, "", null, undefined, and NaN).
 
+        * False values : //? (false , null , undefined , 0 , NaN , '', "", ``(Empty template string))
+
+        * True values :  //? Any other value that does not include the above
+
+            
  */
