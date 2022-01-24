@@ -1,3 +1,4 @@
+//                                      TODO:-----------------------------(2022/01/15👇)-----------------------------
 /*
  * I participated in the reinforcement class for JS1-2 (6 to 11:30) 
      (Arad, Khashayar, Mohammad Hossein and Kian class)
@@ -85,6 +86,9 @@
             ? 4- Logical nullish assignment (??=) : The logical nullish assignment (x ??= y) operator only assigns if x is nullish (null or undefined).
 
             ? 5- Logical OR assignment (||=) : The logical OR assignment (x ||= y) operator only assigns if x is falsy.
+
+
+                          TODO:-----------------------------(2022/01/16👇)-----------------------------
 
 
  */

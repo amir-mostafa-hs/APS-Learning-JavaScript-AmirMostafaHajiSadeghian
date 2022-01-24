@@ -1,10 +1,10 @@
 // !#scope
 
 /*
- * baraye she nasayi block scope ha mytavanim begoim ke shamele code hayi mishawad ke beyne { va }
+ * baraye shenasayi block scope ha mytavanim begoim ke shamele code hayi mishawad ke beyne { va }
  * gharar darad . albate object ha sha mele in mored nemishavad va black scope aksaran dar dstorati mesle
- * if va for estefade mishavad . dar kenar block scope ha yek mired dighar darim be name function scope
- * ke az mored ghabli joda ast va hame scope hayi ke shamele in daste nemishavad da haman block scope ha
+ * if va for estefade mishavad . dar kenar block scope ha yek mored dighar darim be name function scope
+ * ke az mored ghabli joda ast va hame scope hayi ke shamele in daste nemishavad dar haman block scope ha
  * gharar mighirand.
  */
 // ?example:
