@@ -69,5 +69,14 @@ selectFirstDivElement.style.border = "2px dashed green";
 
 /*
  ----------------- add class to HTML element ----------------- 
- 
+ for add class to HTML element , we can use className or classList
 */
+
+const selectParagraph = document.querySelector("p");
+selectParagraph.className = "color";
+// If used in this way, the previous class deletes the element and replaces it with a new value.
+
+selectParagraph.className += " fontSize";
+
+selectParagraph.classList.add("fontFamily");
+// classList may not work in some browsers
