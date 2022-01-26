@@ -26,3 +26,25 @@ const selectElementById = document.getElementById("TestId")
 
 selectElementById.innerHTML = "chenge innerHTML text";
 // this innerHTML modifies the element with id (TestId)
+
+const testGetElementsByTagName = document.getElementsByTagName("span");
+// selects this all span elements and assign it to the variab
+
+const testGetElementsByClassName = document.getElementsByClassName("ClassTest");
+// selects this all element with class (ClassTest) and assign it to the variab
+
+/*
+ When we select several elements, the browser gives us the HTMLCollection containing them. 
+ HTMLCollection is like an array and we can use some array features for them.
+*/
+
+const testQuerySelector = document.querySelector("#TestId");
+// Selects the element with Id (#TestId) and assigns it to the variable
+
+const testQuerySelectorAll = document.querySelectorAll(".ClassTest");
+// Selects all elements with a class (.ClassTest) and assigns them to a variable
+
+/*
+ When we use querySelectorAll, the NodeList browser gives us the selected elements.
+ NodeList is like an array and we can use some array features for them.
+*/
