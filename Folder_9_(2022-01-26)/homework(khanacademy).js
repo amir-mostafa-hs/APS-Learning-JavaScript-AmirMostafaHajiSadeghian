@@ -48,3 +48,26 @@ const testQuerySelectorAll = document.querySelectorAll(".ClassTest");
  When we use querySelectorAll, the NodeList browser gives us the selected elements.
  NodeList is like an array and we can use some array features for them.
 */
+
+const selectAllImgElement = document.querySelectorAll("img");
+for (let index = 0; index < selectAllImgElement.length; index++) {
+    selectAllImgElement[index].height = "100";
+    selectAllImgElement[index].width = "100";
+    selectAllImgElement[index].title = selectAllImgElement[index].alt;
+}
+
+/*
+ ----------------- Style ----------------- 
+ To style in JavaScript, we use camel case instead of (-).
+*/
+
+const selectFirstDivElement = document.querySelector("div");
+selectFirstDivElement.style.width = "70vw";
+selectFirstDivElement.style.height = "50vh";
+selectFirstDivElement.style.backgroundColor = "tomato";
+selectFirstDivElement.style.border = "2px dashed green";
+
+/*
+ ----------------- add class to HTML element ----------------- 
+ 
+*/
