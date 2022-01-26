@@ -80,3 +80,9 @@ selectParagraph.className += " fontSize";
 
 selectParagraph.classList.add("fontFamily");
 // classList may not work in some browsers
+
+/*
+ ----------------- textContent -----------------
+ We can use textContent instead of innerHTML to change the text of the elements.
+ 
+*/
