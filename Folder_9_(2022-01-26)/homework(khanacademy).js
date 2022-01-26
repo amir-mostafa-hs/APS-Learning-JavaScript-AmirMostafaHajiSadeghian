@@ -15,5 +15,14 @@
     The DOM is not our main web page and is just an emulator of it. 
     The browser monitors the DOM and applies the changes to the homepage as soon as it changes.
 
+    Example of working with a document:
 */
 
+document.body.innerHTML = "Hello world";
+// this change the body innerHTML 
+
+const selectElementById = document.getElementById("TestId")
+// select this element with document.getElementById and assign it to the variable
+
+selectElementById.innerHTML = "chenge innerHTML text";
+// this innerHTML modifies the element with id (TestId)
