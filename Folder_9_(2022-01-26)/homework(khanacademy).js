@@ -84,5 +84,18 @@ selectParagraph.classList.add("fontFamily");
 /*
  ----------------- textContent -----------------
  We can use textContent instead of innerHTML to change the text of the elements.
- 
+ innerHTML allows us to use HTML tags within JavaScript.
 */
+
+const changeTextOfElement = document.querySelector("p");
+
+changeTextOfElement.innerHTML = "Hello";
+// Not good just to change the text of the element.
+changeTextOfElement.innerHTML = "<em>Hello</em>";
+// innerHTML can be used this way
+
+changeTextOfElement.textContent = "this is a paragraph";
+
+/*
+ * I did the khanacademy homework today and the above are the important points of its educational clips
+ */
