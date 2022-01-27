@@ -14,3 +14,7 @@ document.body.appendChild(buttonEl);
 const onClick = () => (buttonEl.textContent = "Hello");
 
 buttonEl.addEventListener("click", onClick);
+
+/*
+ ----------------- addEventListener -----------------
+*/
