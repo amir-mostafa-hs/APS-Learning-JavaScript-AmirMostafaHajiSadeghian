@@ -19,9 +19,9 @@
 */
 
 document.body.innerHTML = "Hello world";
-// this change the body innerHTML 
+// this change the body innerHTML
 
-const selectElementById = document.getElementById("TestId")
+const selectElementById = document.getElementById("TestId");
 // select this element with document.getElementById and assign it to the variable
 
 selectElementById.innerHTML = "chenge innerHTML text";
@@ -51,9 +51,9 @@ const testQuerySelectorAll = document.querySelectorAll(".ClassTest");
 
 const selectAllImgElement = document.querySelectorAll("img");
 for (let index = 0; index < selectAllImgElement.length; index++) {
-    selectAllImgElement[index].height = "100";
-    selectAllImgElement[index].width = "100";
-    selectAllImgElement[index].title = selectAllImgElement[index].alt;
+  selectAllImgElement[index].height = "100";
+  selectAllImgElement[index].width = "100";
+  selectAllImgElement[index].title = selectAllImgElement[index].alt;
 }
 
 /*
@@ -95,6 +95,32 @@ changeTextOfElement.innerHTML = "<em>Hello</em>";
 // innerHTML can be used this way
 
 changeTextOfElement.textContent = "this is a paragraph";
+
+/*
+ ----------------- Creating elements -----------------
+ We create the element with the createElement method. 
+ After creating the element, we add it to the body with appendChild.
+
+ The appendChild() is a method of the Node interface. The appendChild() method allows you to add 
+ a node to the end of the list of child nodes of a specified parent node.
+
+ The appendChild() returns the appended child.
+
+ If the childNode is a reference to an existing node in the document, the appendChild() method moves 
+ the childNode from its current position to the new position.
+*/
+const createImage = document.createElement("img");
+createImage.src =
+  "https://www.kasandbox.org/programming-images/animals/cat.png";
+createImage.alt = "Cat Photo";
+
+document.body.appendChild(createImage);
+
+const createParagraph = document.createElement("p");
+const sampleText = document.createTextNode("this is a Cat");
+// we can create text with createTextNode
+createParagraph.appendChild(sampleText);
+document.body.appendChild(createParagraph);
 
 /*
  * I did the khanacademy homework today and the above are the important points of its educational clips
