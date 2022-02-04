@@ -20,14 +20,21 @@ getAsideEvent.style.padding = "10px";
 getAsideEvent.style.borderRadius = "5px";
 getAsideEvent.style.fontSize = "1.5rem";
 
+const getBtnReset = document.getElementById("reset");
+getBtnReset.style.alignSelf = "flex-end";
+getBtnReset.style.position = "absolute";
+const btnReset = () => (getAsideEvent.textContent = "");
+
 const getContent = document.getElementById("content");
 getContent.style.background =
   "linear-gradient(45deg, rgba(174,238,227,1) 0%, rgba(230,191,181,1) 50%, rgba(188,148,233,1) 100%)";
+getContent.style.borderRadius = "10px";
 getContent.style.margin = "20px";
 getContent.style.padding = "10px";
 getContent.style.display = "grid";
-getContent.style.gap = "10px";
-getContent.style.borderRadius = "10px";
+getContent.style.justifyItems = "center";
+getContent.style.alignContent = "space-evenly";
+getContent.style.gridTemplateColumns = " repeat(auto-fit, minmax(150px, 1fr))";
 
 function createAsideElemForTest(text) {
   const aside = document.createElement("aside");
@@ -47,5 +54,13 @@ function createAsideElemForTest(text) {
 }
 
 const asideForClickEvt = createAsideElemForTest("Click Event");
-asideForClickEvt.onclick = function () {};
+asideForClickEvt.onclick = function () {
+  getAsideEvent.innerText += `You have now clicked \n`;
+};
 getContent.appendChild(asideForClickEvt);
+
+const asideForDragsEvt = createAsideElemForTest("Drags Event");
+asideForDragsEvt.addEventListener("drag",function(){
+    
+})
+getContent.appendChild(asideForDragsEvt);
