@@ -51,6 +51,32 @@
 
       ? When you press a character key on the keyboard, the keydown, keypress, and keyup events are fired sequentially. 
       ? However, if you press a non-character key, only the keydown and keyup events are fired.
+
+  * HTMLFormElement : 
+      JavaScript uses the HTMLFormElement object to represent a form. 
+      The HTMLFormElement interface represents a <form> element in the DOM. 
+      It allows access to—and, in some cases, modification of—aspects of the form, 
+      as well as access to its component elements.
+
+      An HTML document can have multiple forms. 
+      The document.forms property returns a collection of forms (HTMLFormControlsCollection) on the document
+
+    * HTMLFormElement Event :
+        Listen to these events using addEventListener(), or by assigning an event listener to the oneventname property of this interface.
+
+        ? formdata
+            The formdata event fires after the entry list representing the form's data is constructed. Also available via the onformdata property.
+
+        ? reset
+            The reset event fires when a form is reset. Also available via the onreset property.
+
+        ? submit
+            he submit event fires when a form is submitted. Also available via the onsubmit property.
+            When you submit the form, the submit event is fired before the request is sent to the server. 
+            This gives you a chance to validate the form data. If the form data is invalid, you can stop submitting the form.
+
+    
+
 */
 
 // document.body.addEventListener;
