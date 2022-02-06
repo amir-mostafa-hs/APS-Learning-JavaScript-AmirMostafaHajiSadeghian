@@ -75,7 +75,13 @@
             When you submit the form, the submit event is fired before the request is sent to the server. 
             This gives you a chance to validate the form data. If the form data is invalid, you can stop submitting the form.
 
-    
+  * Event.preventDefault() : 
+      The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, 
+      its default action should not be taken as it normally would be.
+
+      ! The event will continue to propagate as usual unless the event handler explicitly invokes the stopPropagation() method.
+
+      
 
 */
 
