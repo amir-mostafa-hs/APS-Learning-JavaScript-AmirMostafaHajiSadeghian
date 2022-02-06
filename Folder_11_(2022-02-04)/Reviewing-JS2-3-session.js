@@ -82,20 +82,32 @@
       ! The event will continue to propagate as usual unless the event handler explicitly invokes the stopPropagation() method.
 
   * Change Event : 
-    The change event is fired for <input>, <select>, and <textarea> elements when an alteration 
-    to the element's value is committed by the user. Unlike the input event, the change event 
-    is not necessarily fired for each alteration to an element's value.
+      The change event is fired for <input>, <select>, and <textarea> elements when an alteration 
+      to the element's value is committed by the user. Unlike the input event, the change event 
+      is not necessarily fired for each alteration to an element's value.
 
-    ! The change event occurs when the element has completed changing.
+      ! The change event occurs when the element has completed changing.
 
-    The change event of an <input> element fires when the <input> element loses focus. 
-    The change event does not fire when you’re tying.
+      The change event of an <input> element fires when the <input> element loses focus. 
+      The change event does not fire when you’re tying.
 
-    Depending on the kind of element being changed and the way the user interacts with the element, 
-    the change event fires at a different moment:
-        1- When a <input type="checkbox"> element is checked or unchecked (by clicking or using the keyboard);
-        2- When a <input type="radio"> element is checked (but not when unchecked);
-        3- When the user commits the change explicitly (e.g., by selecting a value from a <select>'s dropdown with a mouse click, 
-           by selecting a date from a date picker for <input type="date">, by selecting a file in the file picker for <input type="file">, etc.);
-        4- When the element loses focus after its value was changed, but not committed (e.g., after editing the value of <textarea> or <input type="text">).
+      Depending on the kind of element being changed and the way the user interacts with the element, 
+      the change event fires at a different moment:
+          1- When a <input type="checkbox"> element is checked or unchecked (by clicking or using the keyboard);
+          2- When a <input type="radio"> element is checked (but not when unchecked);
+          3- When the user commits the change explicitly (e.g., by selecting a value from a <select>'s dropdown with a mouse click, 
+             by selecting a date from a date picker for <input type="date">, by selecting a file in the file picker for <input type="file">, etc.);
+          4- When the element loses focus after its value was changed, but not committed (e.g., after editing the value of <textarea> or <input type="text">).
+
+  * Input Event : 
+      The input event fires every time whenever the value of the <input>, <select>, or <textarea> element changes.
+
+      ! The input event is fired every time the value of the element changes. This is unlike the change event, 
+      ! which only fires when the value is committed, such as by pressing the enter key, selecting a value from a list of options, and the like.
+
+      For example, if you’re typing on the <input> element, the element fire the input event continuously. 
+      However, the change event only fires when the <input> element loses focus.
+
+      For <input> elements with type=checkbox or type=radio, the input event should fire whenever a user toggles the control, per the HTML5 specification.
+      ! However, historically this has not always been the case.
 */
