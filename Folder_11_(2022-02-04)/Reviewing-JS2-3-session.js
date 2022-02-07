@@ -184,5 +184,42 @@
         ? To simply prevent the event from bubbling to ancestor elements but allow other event handlers 
         ? to execute on the same element, we can use event.stopPropagation() instead.
 
+  * Event Delegation :
+      Event delegation allows us to attach a single event listener, to a parent element, that will fire for 
+      all descendants matching a selector, whether those descendants exist now or are added in the future.
 
+      In JavaScript, if we have a large number of event handlers on a page, 
+      these event handlers will directly impact the performance because of the following reasons:
+        1- First, each event handler is a function which is also an object that takes up memory. 
+           The more objects in the memory, the slower the performance.
+        2- Second, it takes time to assign all the event handlers, which causes a delay in the interactivity of the page.
+        ! To solve this issue, we can leverage the event bubbling.
+      
+      ? How it works : 
+        In the click event listener, we can access the target property which references the element that dispatches the event. 
+        To get the id of the element that the event actually fires, we use the target.id property.
+
+        Once having the id of the element that fires the click event, we can have code that handles the event correspondingly.
+
+        The way that we handle the too-many-event-handlers problem is called the event delegation.
+
+        The event delegation refers to the technique of levering event bubbling to handle events 
+        at a higher level in the DOM than the element on which the event originated.
+
+        TODO) JavaScript event delegation benefits : 
+            When it is possible, you can have a single event handler on the document that will handle all the events 
+            of a particular type. By doing this, you gain the following benefits:
+              1- Less memory usage, better performance
+              2- Less time required to set up event handlers on the page.
+              3- The document object is available immediately. As long as the element is rendered, 
+                  it can start functioning correctly without delay. 
+                  You don’t need to wait for the DOMContentLoaded or load events.
+        
+        ? MDN description for further understanding :
+            Event bubbling isn't just annoying though: it can be very useful. 
+            In particular it enables a practice called event delegation. 
+            In this practice, when we want some code to run when the user interacts with any one 
+            of a large number of child elements, we set the event listener on their parent and have 
+            events that happen on them bubble up to their parent rather than having to set the event 
+            listener on every child individually.
 */
