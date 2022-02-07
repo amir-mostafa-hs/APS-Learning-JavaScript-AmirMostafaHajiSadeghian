@@ -110,4 +110,50 @@
 
       For <input> elements with type=checkbox or type=radio, the input event should fire whenever a user toggles the control, per the HTML5 specification.
       ! However, historically this has not always been the case.
+
+  * Event bubbling : 
+      When an event happens on an element, it first runs the handlers on it, then on its parent, 
+      then all the way up on other ancestors.The process is called “bubbling”.
+
+      In the event bubbling model, an event starts at the most specific element and then flows upward toward 
+      the least specific element (the document or even window).
+      
+      Event bubbling and capture are terms that describe phases in how the browser handles events targeted at nested elements.
+
+      When an event is fired on an element that has parent elements , modern browsers run three different phases 
+       1- the capturing phase, 2- the target phase, 3- and the bubbling phase.
+          ? In the capturing phase:
+              The browser checks to see if the element's outer-most ancestor (<html>) 
+              has a click event handler registered on it for the capturing phase, and runs it if so.
+
+              Then it moves on to the next element inside <html> and does the same thing, then the next one, 
+              and so on until it reaches the direct parent of the element that was actually selected.
+
+              TODO) When you click a button, the click event occurs in the following order:
+                1- document
+                2- html
+                3- body                
+                4- button
+
+          ? in the target phase:
+              The browser checks to see if the target property has an event handler for the click event registered on it, and runs it if so.
+              Then, if bubbles is true, it propagates the event to the direct parent of the selected element, then the next one, 
+              and so on until it reaches the <html> element. Otherwise, if bubbles is false, it doesn’t propagate the event to any ancestors of the target.
+
+          ? In the bubbling phase, the exact opposite of the capturing phase occurs:
+              The browser checks to see if the direct parent of the element selected has 
+              a click event handler registered on it for the bubbling phase, and runs it if so.
+              Then it moves on to the next immediate ancestor element and does the same thing, 
+              then the next one, and so on until it reaches the <html> element.
+
+              TODO) When you click a button, the click event occurs in the following order:
+                1- button
+                2- body
+                3- html
+                4- document
+                The click event first occurs on the button which is the element that was clicked. 
+                Then the click event goes up the DOM tree, firing on each node along its way until it reaches the document object.        
+
+          ! Capturing is also called "trickling", which helps remember the propagation order: trickle down, bubble up
+
 */
