@@ -156,4 +156,18 @@
 
           ! Capturing is also called "trickling", which helps remember the propagation order: trickle down, bubble up
 
+        ! Fixing the problem with stopPropagation() : 
+                ! The standard Event object has a function available on it called stopPropagation() which, 
+                ! when invoked on a handler's event object, makes it so that first handler is run but 
+                ! the event doesn't bubble any further up the chain, so no more handlers will be run.
+
+                ! The stopPropagation() method immediately stops the flow of an event through the DOM tree. However, 
+                ! it does not stop the browers default behavior.
+
+  * Stop Propagation of Events : 
+      The stopPropagation() method of the Event interface prevents further propagation of 
+      the current event in the capturing and bubbling phases. It does not, however, prevent any default 
+      behaviors from occurring; for instance, clicks on links are still processed. 
+
+      
 */
