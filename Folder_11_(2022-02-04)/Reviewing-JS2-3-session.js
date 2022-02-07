@@ -169,5 +169,20 @@
       the current event in the capturing and bubbling phases. It does not, however, prevent any default 
       behaviors from occurring; for instance, clicks on links are still processed. 
 
-      
+  * Stop Immediate Propagation of Events : 
+      The stopImmediatePropagation() method of the Event interface prevents other listeners of the same event from being called.
+
+      If several listeners are attached to the same element for the same event type, they are called in the order in which they were added. 
+      If stopImmediatePropagation() is invoked during one such call, no remaining listeners will be called.
+
+   TODO: stopPropagation VS stopImmediatePropagation : 
+        ? stopPropagation will prevent any parent handlers from being executed stopImmediatePropagation 
+        ? will prevent any parent handlers and also any other handlers from executing.
+
+        ? In addition to keeping any additional handlers on an element from being executed, 
+        ? this method also stops the bubbling by implicitly calling event.stopPropagation(). 
+        ? To simply prevent the event from bubbling to ancestor elements but allow other event handlers 
+        ? to execute on the same element, we can use event.stopPropagation() instead.
+
+
 */
