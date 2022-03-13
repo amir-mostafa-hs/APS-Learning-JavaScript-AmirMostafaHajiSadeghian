@@ -222,4 +222,7 @@
             of a large number of child elements, we set the event listener on their parent and have 
             events that happen on them bubble up to their parent rather than having to set the event 
             listener on every child individually.
+
+  * Promise: 
+
 */
