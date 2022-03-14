@@ -55,8 +55,35 @@
 
         ? write node in terminal tor open REPL
 
-        .exit ro double ctrl + C or ctrl + D for exit REPL
-        .help for get REPL help 
-        .load for load Javascript file into REPL
-        .save for save Javascript code 
+            .exit ro double ctrl + C or ctrl + D for exit REPL
+            .help for get REPL help 
+            .load for load Javascript file into REPL
+            .save for save Javascript code 
+
+    ! Wath is process:
+        The process object provides information about, and control over, the current Node.js process.
+
+        The process object in Node.js is a global object that can be accessed inside any module without requiring it. 
+        There are very few global objects or properties provided in Node.js and process is one of them.
+
+        It is an essential component in the Node.js ecosystem as it provides various information sets about the runtime of a program.
+
+        Each program running on a computer represents a process. It's a top level task that an operating system such as Windows or Linux uses to encapsulate a running program. 
+        Among other things, a process contains:
+
+        1- Code that is running
+        2- Memory that is allocated to it by the OS
+        3- Files or sockets that it has open
+        4- One or more threads running within the process
+
+        The term process is an operating system term and not a node.js term. 
+        The process module in node.js is a central place where the designers of node.js put a bunch of methods
+         that relate to the overall process such as process.exit() which exits the application and thus stops
+         the process or process.env which gives you access to the environment variables for your program
+         or process.argv which gives you access to the command line arguments your process was started with
+         and so on... These are all things that apply to your overall program running.
+
+         ? what is argv in process:
+            The process.argv property is an inbuilt application programming interface of the process module
+             which is used to get the arguments passed to the node.js process when run in the command line.
 */
