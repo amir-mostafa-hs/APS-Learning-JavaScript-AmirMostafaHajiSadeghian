@@ -31,4 +31,32 @@
         Node is an entirely different runtime environment, meaning that browser-environment data values and functions,
          like window.alert(), can’t be used. Instead, the Node runtime environment gives back-end applications access 
          to a variety of features unavailable in a browser, such as access to the server’s file system, database, and network.
+
+    ! Watch node.js version and update version:
+        node --version or -v for see node version
+        npm --version or -v for see npm version
+        npm install -g npm for update npm 
+        npm install -g node for update node
+
+    ! What is REPL(Read-Eval-Print-Loop) : 
+        The Node.js REPL is an interactive shell that processes Node.js expressions. 
+        The shell reads JavaScript code the user enters, evaluates the result of interpreting the line of code,
+         prints the result to the user, and loops until the user signals to quit.
+
+        REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or
+         Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. 
+        Node.js or Node comes bundled with a REPL environment. It performs the following tasks :
+
+        1- Read − Reads user's input, parses the input into JavaScript data-structure, and stores in memory.
+        2- Eval − Takes and evaluates the data structure.
+        3- Print − Prints the result.
+        4- Loop − Loops the above command until the user presses ctrl-c twice.
+            (A loop function, which runs the three commands above until termination)
+
+        ? write node in terminal tor open REPL
+
+        .exit ro double ctrl + C or ctrl + D for exit REPL
+        .help for get REPL help 
+        .load for load Javascript file into REPL
+        .save for save Javascript code 
 */
