@@ -146,7 +146,7 @@
                     3- angular, 
                     4- react.
 
-    ! Whar is NPM:
+    ! What is NPM:
         Npm stands for Node Package Manager. It is a package manager for the Node JavaScript platform.
         Npm is known as the world’s largest software registry. Open-source developers all over the world use npm to publish and share their source code.
 
@@ -158,5 +158,5 @@
         ? What can you do with npm:
             npm allows you to install a new package from the registry. This is what you will do most of the time with npm.
             On top of this, npm allows you to discover and publish your new node packages.
-            
+
 */
