@@ -54,11 +54,11 @@
             (A loop function, which runs the three commands above until termination)
 
         ? write node in terminal tor open REPL
-
-            .exit ro double ctrl + C or ctrl + D for exit REPL
-            .help for get REPL help 
-            .load for load Javascript file into REPL
-            .save for save Javascript code 
+            # example:
+                .exit ro double ctrl + C or ctrl + D for exit REPL
+                .help for get REPL help 
+                .load for load Javascript file into REPL
+                .save for save Javascript code 
 
     ! Wath is process:
         The process object provides information about, and control over, the current Node.js process.
@@ -86,4 +86,64 @@
          ? what is argv in process:
             The process.argv property is an inbuilt application programming interface of the process module
              which is used to get the arguments passed to the node.js process when run in the command line.
+
+    ! What is node module:
+        In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on
+         the basis of their related functionality. Modules can be a single file or a collection of multiples files/folders. 
+        The reason programmers are heavily reliant on modules is because of their re-usability as well
+         as the ability to break down a complex piece of code into manageable chunks.
+
+        Each module in Node.js has its own context, so it cannot interfere with other modules or pollute global scope.
+
+        Node.js implements CommonJS modules standard. CommonJS is a group of volunteers who define JavaScript standards
+         for web server, desktop, and console application. (Like ECMAScript)
+
+        Node.js includes three types of modules:
+        1- Core Modules.
+        2- Local Modules.
+        3- Third Party Modules.
+
+          ? Core Modules: Node.js has many built-in modules that are part of the platform and comes with Node.js installation. 
+          ?     These modules can be loaded into the program by using the require function.
+
+                # example:
+                    http : creates an HTTP server in Node.js.
+                    assert : set of assertion functions useful for testing.
+                    fs : used to handle file system.
+                    path : includes methods to deal with file paths.
+                    process : provides information and control about the current Node.js process.
+                    os : provides information about the operating system.
+                    querystring : utility used for parsing and formatting URL query strings.
+                    url : module provides utilities for URL resolution and parsing.
+
+          ? Local Modules: Unlike built-in and external modules, local modules are created locally in your Node.js application. 
+
+                # example:
+                    const text = "test local module";
+                    const obj = {
+                      value1: 10,
+                      value2: [1, 2, 3],
+                    };
+                    const func = (name) => console.log("hello ", name);
+
+                    module.exports = { text, obj, func };
+
+                    # next file code:
+
+                    const {text:test , obj , func} = require("./math");
+
+                    console.log(test);
+                    console.log(obj);
+                    console.log(func);
+
+          ? Third-party modules: Third-party modules are modules that are available online using the Node Package Manager(NPM). 
+          ?     These modules can be installed in the project folder or globally. 
+          ?     npm install -g [module-name]
+          
+                # Some of the popular third-party modules are :
+                    1- mongoose, 
+                    2- express, 
+                    3- angular, 
+                    4- react.
+
 */
