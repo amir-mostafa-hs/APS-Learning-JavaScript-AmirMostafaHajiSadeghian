@@ -159,4 +159,27 @@
             npm allows you to install a new package from the registry. This is what you will do most of the time with npm.
             On top of this, npm allows you to discover and publish your new node packages.
 
+    ! What is package.json :
+        All npm packages contain a file, usually in the project root, called package.json - this file
+         holds various metadata relevant to the project. 
+        This file is used to give information to npm that allows it to identify the project as well as handle
+         the project's dependencies. 
+        It can also contain other metadata such as a project description, the version of the project in a particular distribution,
+         license information, even configuration data - all of which can be vital to both npm and to the end users of the package. 
+        The package.json file is normally located at the root directory of a Node.js project.
+
+        Your project also must include a package.json before any packages can be installed from NPM. This is probably the top reason why you need one in your project.
+
+        # package.json properties : 
+            ‣ version : indicates the current version .
+            ‣ name : sets the application/package name .
+            ‣ description : is a brief description of the app/package .
+            ‣ main : sets the entry point for the application .
+            ‣ private : if set to true prevents the app/package to be accidentally published on npm .
+            ‣ scripts : defines a set of node scripts you can run .
+            ‣ dependencies : sets a list of npm packages installed as dependencies .
+            ‣ devDependencies : sets a list of npm packages installed as development dependencies .
+            ‣ engines : sets which versions of Node.js this package/app works on .
+            ‣ browserslist : is used to tell which browsers (and their versions) you want to support .
+        
 */
