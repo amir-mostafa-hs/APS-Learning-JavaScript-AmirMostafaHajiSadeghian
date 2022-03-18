@@ -182,4 +182,14 @@
             ‣ engines : sets which versions of Node.js this package/app works on .
             ‣ browserslist : is used to tell which browsers (and their versions) you want to support .
         
+        ? what is dependencies in package.json :
+            To specify the packages your project depends on, you must list them as "dependencies" or "devDependencies"
+             in your package's package.json file. 
+            When you (or another user) run npm install, npm will download dependencies and devDependencies that are listed
+             in package.json that meet the semantic version requirements listed for each.
+            
+            # "dependencies": Packages required by your application in production.
+            # "devDependencies": Packages that are only needed for local development and testing.
+                    * You need to set the --production flag (npm install --production) to avoid installing these development dependencies.
+        
 */
