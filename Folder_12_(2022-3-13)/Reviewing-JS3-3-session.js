@@ -60,7 +60,7 @@
                 .load for load Javascript file into REPL
                 .save for save Javascript code 
 
-    ! Wath is process:
+    ! What is process:
         The process object provides information about, and control over, the current Node.js process.
 
         The process object in Node.js is a global object that can be accessed inside any module without requiring it. 
