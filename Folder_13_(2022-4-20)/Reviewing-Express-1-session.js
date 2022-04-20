@@ -17,7 +17,7 @@
                     The waiter is the messenger – or API – that takes your request or order and tells
                      the kitchen – the system – what to do. Then the waiter delivers the response back to you; in this case, it is the food.
 
-    !What is express js in node js:
+    !What is Express js in Node js:
         Express.js, or simply Express, is a back end web application framework for Node.js,
          released as free and open-source software under the MIT License. 
         It is designed for building web applications and APIs. 
@@ -39,5 +39,12 @@
          how communication should be standardized at some level of a network; and so forth. 
         A framework is generally more comprehensive than a protocol and more prescriptive than a structure.
 
-        
+    !What is Library:
+        A software library generally consists of pre-written code, classes, procedures, scripts, configuration data and more. 
+        Typically, a developer might manually add a software library to a program to achieve more functionality or to automate a process
+         without writing code for it. For example, when developing a mathematical program or application, a developer may add a mathematics
+         software library to the program to eliminate the need for writing complex functions. 
+        All of the available functions within a software library can just be called/used within the program body without defining them explicitly. 
+        Similarly, a compiler might automatically add a related software library to a program on run time.
+
 */
