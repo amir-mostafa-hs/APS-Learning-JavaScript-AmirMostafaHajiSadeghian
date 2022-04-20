@@ -47,4 +47,18 @@
         All of the available functions within a software library can just be called/used within the program body without defining them explicitly. 
         Similarly, a compiler might automatically add a related software library to a program on run time.
 
+    ? Difference between a Library and a Framework:
+        Developers often use the terms “library” and “framework” as if they were the same. But there is a difference.
+        Both libraries and frameworks are reusable code written by someone else. Their purpose is to help you solve common problems in easier ways.
+        We can use a house as a metaphor to explain the difference between these concepts.
+        A library is like building your home from scratch, you have the choice to make your house as you wish, with any architecture you like,
+         you can sort your rooms in the way you like.
+        On the other hand, Framework is like buying a new house, you don’t have to deal with building problems,
+         but you can’t choose how to sort your rooms because the house is already built.
+
+        # The Technical Difference:
+            When you use a library, you are in charge of the flow of the application. 
+            You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. 
+            It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
+
 */
