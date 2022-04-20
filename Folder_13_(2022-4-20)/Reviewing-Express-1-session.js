@@ -61,4 +61,16 @@
             You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. 
             It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
 
+    * How to install Express :
+            1- use (npm init -y)
+            2- use (npm install express)
+
+    * How to use Express:
+            1- create JavaScrept file //?=> index.js
+            2- write require("express") and save in variable //?=> const express = require("express");
+            3- assign express function to new variable //?=> const app = express();
+            4- create a new variable to run Express //?=> const PORT = 9963;
+            5- write listen funcrion //?=> app.listen(PORT,()=> console.log("server is running in port:",PORT));
+            6- open browser and go to localhost:9963 or 127.0.0.1:9963 URL
+
 */
