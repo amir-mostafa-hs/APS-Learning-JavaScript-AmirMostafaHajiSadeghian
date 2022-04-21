@@ -90,5 +90,18 @@
 
             ? app.use((req,?)) => {
             ?   console.log("run use function");
-            ? }); 
+            ? });
+            
+    * What is respons(res) in Express:
+            The res object represents the HTTP response that an Express app sends when it gets an HTTP request.
+            In this documentation and by convention, the object is always referred to as res
+             (and the HTTP request is req) but its actual name is determined by the parameters to the 
+             callback function in which you’re working.
+
+            # The response object is passed to the second parameter on the request handler,
+            #  thus we can send to the user a page an image a download file etc.
+
+            ? app.use((req,res)) => {
+            ?   console.log("run use function");
+            ? });
 */
