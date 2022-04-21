@@ -73,4 +73,13 @@
             5- write listen funcrion //?=> app.listen(PORT,()=> console.log("server is running in port:",PORT));
             6- open browser and go to localhost:9963 or 127.0.0.1:9963 URL
 
+    * What is app.use():
+            The app.use() function is used to mount the specified middleware function(s) at the path which is
+             being specified. It is mostly used to set up middleware for your application.
+
+            ? app.use(()) => {
+            ?   console.log("run use function");
+            ? });
+
+
 */
