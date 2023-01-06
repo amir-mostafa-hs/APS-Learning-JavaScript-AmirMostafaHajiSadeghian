@@ -190,6 +190,6 @@
             
             # "dependencies": Packages required by your application in production.
             # "devDependencies": Packages that are only needed for local development and testing.
-                    * You need to set the --production flag (npm install --production) to avoid installing these development dependencies.
+                    * You need to set the --production flag (npm install --production , npm install -p) to avoid installing these development dependencies.
         
 */
